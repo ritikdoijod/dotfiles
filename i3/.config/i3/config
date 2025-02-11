@@ -3,7 +3,7 @@
 ## load config files
 include ~/.config/i3/config.d/*
 
-set $mod Mod4
+set $mod Mod1
 
 font pango:Meslo LGM Nerd Font 10
 
