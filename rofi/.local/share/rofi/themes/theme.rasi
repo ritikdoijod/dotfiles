@@ -1,9 +1,69 @@
 * {
-  background-color: transparent;
+  color-bg: #0d1b2a;
+  color-bg-soft: #1b263b;
+  color-fg: #e0e1dd;
 }
 
 window {
+  padding: 1em;
+  background-color: @color-bg;
 }
 
 mainbox {
+  background-color: transparent;
+}
+
+icon-ib {
+  expand: false;
+  filename: "system-search";
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
+  background-color: transparent;
+  size: 1em;
+}
+
+entry {
+  placeholder: "Search";
+  placeholder-color: #415a77;
+  background-color: @color-bg;
+  text-color: @color-fg;
+}
+
+inputbar {
+  spacing: 1em;
+  padding: 1em;
+  background-color: @color-bg;
+  children: [ icon-ib, entry ];
+}
+
+listview {
+  background-color: transparent;
+}
+
+element {
+  orientation: horizontal;
+  spacing: 1em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  background-color: transparent;
+  children: [element-icon, element-text ];
+}
+
+element-icon {
+  size: 1.5em;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  background-color: transparent;
+}
+
+element-text {
+  vertical-align: 0.5;
+  padding: 0.2em;
+  background-color: transparent;
+  text-color: @color-fg;
+}
+
+element selected {
+  background-color: @color-bg-soft;
+  text-color: @color-fg;
 }
